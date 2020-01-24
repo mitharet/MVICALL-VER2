@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="MissingTranslation">Ver2MVicall</string>
+    <string name="tnc" tools:ignore="MissingTranslation">Saya setuju dengan Syarat &amp; Ketentuan yang berlaku</string>
+    <string name="permis1" tools:ignore="MissingTranslation">Kita masih membutuhkan beberapa akses agar semua bisa berjalan…</string>
+    <string name="dialertext" tools:ignore="MissingTranslation">Agar Video Ringtone bisa muncul di hapemu</string>
+    <string name="akses" tools:ignore="MissingTranslation">Akses Kontak &amp; Telepon</string>
+    <string name="descAkses" tools:ignore="MissingTranslation">Untuk mengetahui temanmu yang sudah pakai MViCall</string>
+
+//REGISTER
+    <string name="text_otp" translatable="false">6 digit kode OTP sudah dikirim ke nomor</string>
+    <string name="text_phoneno" translatable="false">+628782842417</string>
+    <string name="text_wrong_number" translatable="false">Salah Nomor?</string>
+    <string name="text_input_otp" translatable="false">Masukkan kode OTP disini:</string>
+    <string name="text_cannot_otp" translatable="false">Kirim ulang(60s)</string>
+    <string name="text_warning" tools:ignore="MissingTranslation">Pastikan kamu memasukkan nomor utamamu (simcard 1) ya!</string>
+
+    <string name="text_verification" tools:ignore="MissingTranslation">Verifikasi</string>
+    <string name="text_verification2" tools:ignore="MissingTranslation">Masukkan OTP</string>
+
+</resources>

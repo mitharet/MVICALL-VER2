@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="defaultTextColor">@android:color/black</color>
+  <color name="defaultBackgroundColor">@android:color/transparent</color>
+
+  <color name="colorGreyLine">#EFEFEF</color>
+  <color name="colordark01">#222b45</color>
+</resources>
