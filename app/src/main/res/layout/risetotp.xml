@@ -11,9 +11,9 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="340dp"
-        android:layout_height="596dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        android:layout_width="388dp"
+        android:layout_height="593dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline46"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline37"
         app:layout_constraintTop_toTopOf="@+id/guideline57">
@@ -21,13 +21,13 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/registerlayout"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="325dp"
+                android:layout_width="0dp"
                 android:layout_height="249dp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline43"
                 app:layout_constraintEnd_toStartOf="@+id/guideline59"
@@ -46,13 +46,13 @@
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="89dp"
-                android:layout_height="44dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:text="Hallo!"
                 android:textColor="@color/white"
-                android:textSize="32dp"
+                android:textSize="35dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.502"
@@ -62,16 +62,18 @@
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
-                android:layout_height="46dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
+                android:fontFamily="@font/avenirnext_regular"
                 android:lineSpacingExtra="-5dp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
                 android:text="Untuk mulai pakai MViCall, masukkan nomor handphonemu disini:"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline59"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -94,7 +96,7 @@
                 android:layout_width="256dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 android:layout_weight="1"
                 android:background="@drawable/cardviewstyle"
                 android:orientation="horizontal"
@@ -123,6 +125,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:background="@color/white"
+                    android:fontFamily="@font/avenirnext_regular"
                     android:hint="Masukkan Nomor HP"
                     android:importantForAutofill="no"
                     android:inputType="number"
@@ -146,13 +149,13 @@
 
             <LinearLayout
                 android:id="@+id/lnTnc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="267dp"
+                android:layout_height="202dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="5dp"
                 android:orientation="vertical"
-                app:layout_constraintEnd_toStartOf="@+id/guideline59"
-                app:layout_constraintHorizontal_bias="0.485"
+                android:paddingTop="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linPhoneNum">
 
@@ -161,45 +164,46 @@
                     android:layout_width="217dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/avenirnext_regular"
                     android:text="@string/text_warning"
                     android:textAlignment="center"
                     android:textColor="@color/orange"
                     android:textSize="12dp"
-                    android:visibility="invisible" />
-            </LinearLayout>
+                    android:visibility="gone" />
 
-            <LinearLayout
-                android:id="@+id/lnTncc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal"
-                android:paddingTop="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/guideline59"
-                app:layout_constraintHorizontal_bias="0.6"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linPhoneNum"
-                app:layout_constraintVertical_bias="0.100000024">
-
-                <CheckBox
-                    android:id="@+id/cbTNC"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_below="@id/tv_warning"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/tvTnC"
-                    android:layout_width="208dp"
+                <LinearLayout
+                    android:id="@+id/lnTncc"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:text="@string/tnc"
-                    android:textColor="@color/white"
-                    android:textSize="16dp" />
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_10sdp">
+
+                    <CheckBox
+                        android:id="@+id/cbTNC"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/tv_warning"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingRight="5dp" />
+
+                    <TextView
+                        android:id="@+id/tvTnC"
+                        android:layout_width="208dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/avenirnext_medium"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="@string/tnc"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
             </LinearLayout>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
@@ -232,13 +236,17 @@
         android:layout_width="101dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/btn_rounded"
+        android:fontFamily="@font/avenirnext_bold"
         android:text="Lanjut"
         android:textColor="@color/purpleintro"
+        android:textSize="@dimen/_12sdp"
         app:layout_constraintBottom_toTopOf="@+id/guideline50"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline37"
-        app:layout_constraintTop_toTopOf="@+id/guideline46" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline50"

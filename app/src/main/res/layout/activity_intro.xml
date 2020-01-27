@@ -67,6 +67,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/btn_rounded"
+        android:fontFamily="@font/avenirnext_bold"
         android:text="Mulai Sekarang"
         app:layout_constraintBottom_toTopOf="@+id/guideline27"
         app:layout_constraintEnd_toStartOf="@+id/guideline35"

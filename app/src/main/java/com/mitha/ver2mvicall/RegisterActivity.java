@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.mitha.ver2mvicall.base.BaseActivity;
@@ -30,7 +31,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     @BindView(R.id.btn_delete)
     ImageView image;
     @BindView(R.id.tv_warning)
-    TextView textView;
+    TextView warning;
     @BindView(R.id.etPhoneNo)
     EditText editText;
 
@@ -52,9 +53,10 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
 
     }
 
-
     public void enableeditView(View view){
-        textView.setVisibility(View.VISIBLE);
+        if(warning!=null){
+            warning.setVisibility(View.VISIBLE);
+        }
         image.setVisibility(View.VISIBLE);
     }
 

@@ -52,10 +52,11 @@
                 android:layout_width="166dp"
                 android:layout_height="33dp"
                 android:layout_gravity="center"
+                android:fontFamily="@font/avenirnext_bold"
                 android:gravity="center"
                 android:text="@string/text_verification2"
                 android:textColor="#231640"
-                android:textSize="24dp"
+                android:textSize="@dimen/_17sdp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/guideline30"
                 app:layout_constraintEnd_toStartOf="@+id/guideline42"
@@ -70,10 +71,11 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:background="@drawable/btn_rounded"
+                android:fontFamily="@font/avenirnext_bold"
                 android:text="@string/text_verification"
                 android:textAllCaps="false"
                 android:textColor="@color/purpleintro"
-                android:textSize="16dp"
+                android:textSize="@dimen/_14sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/guideline42"
                 app:layout_constraintStart_toStartOf="@+id/guideline41"
@@ -110,11 +112,13 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
+                android:fontFamily="@font/avenirnext_regular"
                 android:gravity="center"
                 android:lineSpacingExtra="-5dp"
                 android:text="@string/text_otp"
                 android:textColor="@color/black"
-                android:textSize="16dp"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline40"
                 app:layout_constraintEnd_toStartOf="@+id/guideline42"
                 app:layout_constraintStart_toStartOf="@+id/guideline41"
                 app:layout_constraintTop_toTopOf="@+id/guideline30" />
@@ -166,18 +170,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/avenirnext_bold"
                     android:text="@string/text_wrong_number"
                     android:textColor="@color/black"
-                    android:textSize="14dp" />
+                    android:textSize="@dimen/_10sdp" />
 
                 <TextView
                     android:id="@+id/tvTnC"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/avenirnext_regular"
                     android:text="@string/text_cannot_otp"
                     android:textColor="@color/grey_868686"
-                    android:textSize="14dp" />
+                    android:textSize="@dimen/_10sdp" />
 
             </LinearLayout>
 
@@ -213,10 +219,11 @@
                 android:id="@+id/tv_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/avenirnext_bold"
                 android:text="Kode Salah!"
                 android:textColor="@color/kodesalah"
-                android:textSize="14dp"
-                android:visibility="invisible"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
                 app:layout_constraintBottom_toTopOf="@+id/guideline44"
                 app:layout_constraintEnd_toStartOf="@+id/guideline42"
                 app:layout_constraintStart_toStartOf="@+id/guideline41"

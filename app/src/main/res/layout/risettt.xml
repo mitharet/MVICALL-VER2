@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/lnTnc"
-        android:layout_width="216dp"
-        android:layout_height="189dp"
+        android:layout_width="267dp"
+        android:layout_height="202dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="95dp"
         android:orientation="vertical"
-        android:paddingTop="20dp">
+        android:paddingTop="20dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteY="72dp">
 
         <TextView
             android:id="@+id/tv_warning"
@@ -21,13 +24,14 @@
             android:text="@string/text_warning"
             android:textAlignment="center"
             android:textColor="@color/orange"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:visibility="invisible" />
+
         <LinearLayout
             android:id="@+id/lnTncc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="95dp"
             android:orientation="horizontal"
             android:paddingTop="20dp">
 
@@ -49,8 +53,9 @@
                 android:textColor="@color/white"
                 android:textSize="16dp" />
         </LinearLayout>
+
+
     </LinearLayout>
 
 
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
