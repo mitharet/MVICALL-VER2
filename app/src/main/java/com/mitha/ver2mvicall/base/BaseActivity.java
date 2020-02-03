@@ -47,30 +47,6 @@ public class BaseActivity extends AppCompatActivity {
             Manifest.permission.READ_PHONE_STATE};
 
 
-    public int getScreenHeight(){
-        DisplayMetrics displayMetrics = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        return displayMetrics.heightPixels;
-    }
-
-    public Intent intent(Class act){
-        Intent i = new Intent(BaseActivity.this, act);
-        startActivity(i);
-        finish();
-        return i;
-    }
-
-    @SuppressLint("ObsoleteSdkInt")
-    public void setTransparentTheme(){
-        //make translucent statusBar on kitkat devices
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
-        //make fully Android Transparent Status bar
-        if (Build.VERSION.SDK_INT >= 21) {
-            setWindowFlag(this, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, false);
-            getWindow().setStatusBarColor(Color.TRANSPARENT);
-        }
-    }
-
     public void setWindowFlag(Activity activity, final int bits, boolean on) {
         Window win = activity.getWindow();
         WindowManager.LayoutParams winParams = win.getAttributes();

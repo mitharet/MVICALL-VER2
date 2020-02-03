@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@color/purpleintro">
 
-    <View
+    <VideoView
         android:id="@+id/view2"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -69,6 +69,9 @@
         android:background="@drawable/btn_rounded"
         android:fontFamily="@font/avenirnext_bold"
         android:text="Mulai Sekarang"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:textSize="@dimen/_12sdp"
         app:layout_constraintBottom_toTopOf="@+id/guideline27"
         app:layout_constraintEnd_toStartOf="@+id/guideline35"
         app:layout_constraintHorizontal_bias="0.0"

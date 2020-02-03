@@ -7,22 +7,21 @@
     android:layout_height="match_parent"
     android:id="@+id/parent_view"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     android:background="@color/purpleintro">
 
     <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="388dp"
-        android:layout_height="593dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline46"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline37"
-        app:layout_constraintTop_toTopOf="@+id/guideline57">
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/registerlayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ImageView
@@ -89,7 +88,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.95" />
+                app:layout_constraintGuide_percent="1.0" />
 
             <LinearLayout
                 android:id="@+id/linPhoneNum"
@@ -100,6 +99,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/cardviewstyle"
                 android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/lnTnc"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView7">
@@ -213,7 +213,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.04" />
+        app:layout_constraintGuide_percent="-0.0025445293" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline38"

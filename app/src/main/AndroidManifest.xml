@@ -14,10 +14,11 @@
 
         <activity android:name=".VerificationActivity"
                   android:windowSoftInputMode="stateVisible|adjustResize"/>
+
         <activity android:name=".IntroActivity" />
 
         <activity android:name=".RegisterActivity"
-            android:windowSoftInputMode="stateVisible|adjustResize"/>
+                  android:windowSoftInputMode="stateVisible|adjustResize"/>
 
         <activity android:name=".MainActivity"/>
 

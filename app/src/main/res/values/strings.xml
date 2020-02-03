@@ -6,7 +6,7 @@
     <string name="akses" tools:ignore="MissingTranslation">Akses Kontak &amp; Telepon</string>
     <string name="descAkses" tools:ignore="MissingTranslation">Untuk mengetahui temanmu yang sudah pakai MViCall</string>
 
-//REGISTER
+    //REGISTER
     <string name="text_otp" translatable="false">6 digit kode OTP sudah dikirim ke nomor</string>
     <string name="text_phoneno" translatable="false">+628782842417</string>
     <string name="text_wrong_number" translatable="false">Salah Nomor?</string>
@@ -16,5 +16,6 @@
 
     <string name="text_verification" tools:ignore="MissingTranslation">Verifikasi</string>
     <string name="text_verification2" tools:ignore="MissingTranslation">Masukkan OTP</string>
+    
 
 </resources>

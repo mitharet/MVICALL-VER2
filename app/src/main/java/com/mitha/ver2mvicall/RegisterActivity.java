@@ -3,16 +3,12 @@ package com.mitha.ver2mvicall;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.mitha.ver2mvicall.base.BaseActivity;
@@ -35,21 +31,18 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     @BindView(R.id.etPhoneNo)
     EditText editText;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.risetotp);
+        setContentView(R.layout.risettt);
 
         ButterKnife.bind(this);
 
         lanjut.setOnClickListener(this);
         image.setOnClickListener(this);
+
         initView();
-
-    }
-
-    private void initView (){
-        setKeyboard(mParentLayout);
 
     }
 
@@ -60,13 +53,25 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         image.setVisibility(View.VISIBLE);
     }
 
+    private void initView (){
+        setKeyboard(mParentLayout);
+    }
+
+    private void closeKeyboard() {
+        if (editText != null) {
+            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(editText.getWindowToken(), 0);
+        }
+    }
+
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
 
             case R.id.button2:
-                Intent intent = new Intent(RegisterActivity.this, VerificationActivity.class);
-                startActivity(intent);
+                verificationFragment bottomSheetFragment = new verificationFragment();
+                bottomSheetFragment.show(getSupportFragmentManager(), bottomSheetFragment.getTag());
                 break;
 
             case R.id.btn_delete:
