@@ -16,6 +16,6 @@
 
     <string name="text_verification" tools:ignore="MissingTranslation">Verifikasi</string>
     <string name="text_verification2" tools:ignore="MissingTranslation">Masukkan OTP</string>
-    
+
 
 </resources>

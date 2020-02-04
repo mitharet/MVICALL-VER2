@@ -1,6 +1,7 @@
 package com.mitha.ver2mvicall;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,8 @@ public class verificationFragment extends BottomSheetDialogFragment {
     public PinView otp;
     public TextView tv_Warning;
 
+    String getotp="1234";
+
     public verificationFragment() {
 
     }
@@ -35,7 +38,7 @@ public class verificationFragment extends BottomSheetDialogFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_verifivation, container);
+        View rootView = inflater.inflate(R.layout.fragment_verificatioon, container);
 
         getDialog().getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
@@ -43,17 +46,24 @@ public class verificationFragment extends BottomSheetDialogFragment {
         //        //set to adjust screen height automatically, when soft keyboard appears on screen
         //        Objects.requireNonNull(Objects.requireNonNull(getDialog()).getWindow()).setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
 
-        tv_Warning = rootView.findViewById(R.id.tv_warning);
+        tv_Warning = rootView.findViewById(R.id.tv_info);
         otp = rootView.findViewById(R.id.pinViewCode);
         lanjut = rootView.findViewById(R.id.buttonNext);
         lanjut.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v) {
-                if (otp == null) {
-                    tv_Warning.setVisibility(View.INVISIBLE);
-                } else {
-                    startActivity(new Intent(getActivity(), PermissionActivity.class));
+                String gettotp=otp.getText().toString();
+                if (!TextUtils.isEmpty(gettotp)) {
+                    if (!gettotp.equals(getotp)) {
+                        tv_Warning.setText("Kode Salah!");
+                        tv_Warning.setTextColor(getActivity().getResources().getColor(R.color.kodesalah));
+                        tv_Warning.setVisibility(View.VISIBLE);
+                    } else {
+                        tv_Warning.setText("Kode Benar!");
+                        tv_Warning.setTextColor(getActivity().getResources().getColor(R.color.kodebenar));
+                        startActivity(new Intent(getActivity(), PermissionActivity.class));
+                    }
                 }
             }
         });
