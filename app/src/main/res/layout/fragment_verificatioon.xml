@@ -2,12 +2,12 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".verificationFragment">
 
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
@@ -20,7 +20,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/otp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="323dp"
             android:background="@drawable/bg_card"
             android:orientation="vertical"
@@ -76,8 +76,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/guideline42"
                 app:layout_constraintStart_toStartOf="@+id/guideline41"
-                app:layout_constraintTop_toBottomOf="@+id/lnTnc"
-                app:layout_constraintVertical_bias="0.846" />
+                app:layout_constraintTop_toBottomOf="@+id/lnTnc" />
 
             <ProgressBar
                 android:id="@+id/progress_bar"
@@ -89,9 +88,10 @@
                 android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/guideline42"
+                app:layout_constraintHorizontal_bias="0.852"
                 app:layout_constraintStart_toStartOf="@+id/guideline41"
                 app:layout_constraintTop_toBottomOf="@+id/lnTnc"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.529" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline30"
@@ -134,10 +134,10 @@
             <com.chaos.view.PinView
                 android:id="@+id/pinViewCode"
                 style="@style/PinWidget.PinView"
-                android:layout_width="216dp"
-                android:layout_height="56dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@color/white"
+                android:background="@drawable/bg_pin"
                 android:cursorVisible="false"
                 android:inputType="number"
                 android:padding="10dp"
@@ -146,29 +146,31 @@
                 app:cursorWidth="2dp"
                 app:itemCount="6"
                 app:itemHeight="40dp"
-                app:itemSpacing="10dp"
-                app:itemWidth="40dp"
-                app:layout_constraintBottom_toTopOf="@+id/guideline55"
+                app:itemSpacing="3dp"
+                app:itemWidth="35dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_info"
                 app:layout_constraintEnd_toStartOf="@+id/guideline42"
                 app:layout_constraintStart_toStartOf="@+id/guideline41"
                 app:layout_constraintTop_toBottomOf="@+id/textOtp"
-                app:lineColor="@color/purpleintro" />
+                app:lineWidth="2dp" />
 
             <LinearLayout
                 android:id="@+id/lnTnc"
                 android:layout_width="0dp"
                 android:layout_height="19dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
                 android:gravity="center"
                 android:orientation="horizontal"
+                android:paddingLeft="@dimen/_12sdp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline45"
-                app:layout_constraintEnd_toStartOf="@+id/guideline42"
-                app:layout_constraintStart_toStartOf="@+id/guideline41"
+                app:layout_constraintEnd_toEndOf="@+id/pinViewCode"
+                app:layout_constraintStart_toStartOf="@+id/pinViewCode"
                 app:layout_constraintTop_toTopOf="@+id/guideline44">
 
                 <TextView
                     android:id="@+id/tvsalah"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/avenirnext_bold"
@@ -178,7 +180,7 @@
 
                 <TextView
                     android:id="@+id/tvTnC"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/avenirnext_regular"
@@ -200,14 +202,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.06" />
+                app:layout_constraintGuide_percent="0.05" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline42"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="1.0" />
+                app:layout_constraintGuide_percent="0.95" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline45"

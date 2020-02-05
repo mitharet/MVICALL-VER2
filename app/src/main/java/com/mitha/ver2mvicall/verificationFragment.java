@@ -1,11 +1,15 @@
 package com.mitha.ver2mvicall;
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -22,7 +26,7 @@ public class verificationFragment extends BottomSheetDialogFragment {
     public PinView otp;
     public TextView tv_Warning;
 
-    String getotp="1234";
+    String getotp="123456";
 
     public verificationFragment() {
 
@@ -56,10 +60,18 @@ public class verificationFragment extends BottomSheetDialogFragment {
                 String gettotp=otp.getText().toString();
                 if (!TextUtils.isEmpty(gettotp)) {
                     if (!gettotp.equals(getotp)) {
+                        otp.setBackgroundResource(R.drawable.kodesalah);
+                        @SuppressLint("ResourceType") Animation animation1 =
+                                AnimationUtils.loadAnimation(getActivity().getApplicationContext(),
+                                        R.animator.alpha);
+                        otp.startAnimation(animation1);
+                        otp.setTextColor(Color.WHITE);
                         tv_Warning.setText("Kode Salah!");
                         tv_Warning.setTextColor(getActivity().getResources().getColor(R.color.kodesalah));
                         tv_Warning.setVisibility(View.VISIBLE);
                     } else {
+                        otp.setBackgroundResource(R.drawable.kodebenar);
+                        otp.setTextColor(Color.WHITE);
                         tv_Warning.setText("Kode Benar!");
                         tv_Warning.setTextColor(getActivity().getResources().getColor(R.color.kodebenar));
                         startActivity(new Intent(getActivity(), PermissionActivity.class));
