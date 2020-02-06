@@ -63,7 +63,12 @@ public class verificationFragment extends BottomSheetDialogFragment {
                         otp.setBackgroundResource(R.drawable.kodesalah);
                         @SuppressLint("ResourceType") Animation animation1 =
                                 AnimationUtils.loadAnimation(getActivity().getApplicationContext(),
-                                        R.animator.alpha);
+                                        R.animator.bounce);
+
+                        // Use bounce interpolator with amplitude 0.2 and frequency 20
+                        MyBounceInterpolator interpolator = new MyBounceInterpolator(0.2, 20);
+                        animation1.setInterpolator(interpolator);
+
                         otp.startAnimation(animation1);
                         otp.setTextColor(Color.WHITE);
                         tv_Warning.setText("Kode Salah!");
@@ -82,4 +87,5 @@ public class verificationFragment extends BottomSheetDialogFragment {
 
         return rootView;
     }
+
 }

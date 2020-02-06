@@ -13,7 +13,7 @@
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline60"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -235,7 +235,7 @@
         app:layout_constraintGuide_percent="-0.0025445293" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_lanjut"
         android:layout_width="101dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
@@ -262,14 +262,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8" />
+        app:layout_constraintGuide_percent="0.95" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline60"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.74" />
+        app:layout_constraintGuide_percent="0.86" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline56"

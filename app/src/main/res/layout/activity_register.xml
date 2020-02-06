@@ -244,6 +244,7 @@
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:background="@drawable/btn_rounded"
+        android:fontFamily="@font/avenirnext_bold"
         android:text="Lanjut"
         android:textColor="@color/purpleintro"
         app:layout_constraintBottom_toTopOf="@+id/guideline50"

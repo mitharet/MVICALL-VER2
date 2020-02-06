@@ -20,7 +20,7 @@ import butterknife.ButterKnife;
 
 public class RegisterActivity extends BaseActivity implements View.OnClickListener{
 
-    @BindView(R.id.button2)
+    @BindView(R.id.btn_lanjut)
     Button lanjut;
     @BindView(R.id.parent_view)
     ConstraintLayout mParentLayout;
@@ -35,7 +35,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.risettt);
+        setContentView(R.layout.riset);
 
         ButterKnife.bind(this);
 
@@ -69,7 +69,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()) {
 
-            case R.id.button2:
+            case R.id.btn_lanjut:
                 verificationFragment bottomSheetFragment = new verificationFragment();
                 bottomSheetFragment.show(getSupportFragmentManager(), bottomSheetFragment.getTag());
                 break;
