@@ -46,4 +46,6 @@ dependencies {
     implementation project(':countrycodepicker')
     implementation project(':pinview')
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    compile 'com.makeramen:roundedimageview:2.3.0'
 }

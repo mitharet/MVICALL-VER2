@@ -17,5 +17,10 @@
     <string name="text_verification" tools:ignore="MissingTranslation">Verifikasi</string>
     <string name="text_verification2" tools:ignore="MissingTranslation">Masukkan OTP</string>
 
+    //Profile
+    <string name="text_choose_image" translatable="false">Pilih Sumber Gambar</string>
+    <string name="text_choose_selfie" translatable="false">Ambil Selfie</string>
+    <string name="text_choose_gallery" translatable="false">Pilih dari Gallery</string>
+
 
 </resources>

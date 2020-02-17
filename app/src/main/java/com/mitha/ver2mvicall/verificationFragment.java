@@ -79,7 +79,7 @@ public class verificationFragment extends BottomSheetDialogFragment {
                         otp.setTextColor(Color.WHITE);
                         tv_Warning.setText("Kode Benar!");
                         tv_Warning.setTextColor(getActivity().getResources().getColor(R.color.kodebenar));
-                        startActivity(new Intent(getActivity(), PermissionActivity.class));
+                        startActivity(new Intent(getActivity(), MainActivity.class));
                     }
                 }
             }

@@ -3,6 +3,7 @@ package com.mitha.ver2mvicall;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -35,7 +36,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.riset);
+        setContentView(R.layout.test_aja_constraint);
 
         ButterKnife.bind(this);
 
@@ -70,6 +71,8 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         switch (v.getId()) {
 
             case R.id.btn_lanjut:
+//                Intent intent = new Intent(RegisterActivity.this, verificationFragment.class);
+//                startActivity(intent);
                 verificationFragment bottomSheetFragment = new verificationFragment();
                 bottomSheetFragment.show(getSupportFragmentManager(), bottomSheetFragment.getTag());
                 break;
