@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/text_home"/>
+
+    <item
+        android:id="@+id/navigation_marketplace"
+        android:title="@string/text_market"
+        android:icon="@drawable/ic_market"/>
+
+    <item
+        android:id="@+id/empty"
+        android:enabled="false"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/navigation_teman"
+        android:icon="@drawable/ic_friend"
+        android:title="@string/text_teman" />
+
+    <item
+        android:id="@+id/navigation_reward"
+        android:icon="@drawable/ic_like_white"
+        android:title="@string/text_reward" />
+
+</menu>

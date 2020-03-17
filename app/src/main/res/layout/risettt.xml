@@ -98,7 +98,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/cardviewstyle"
                 android:orientation="horizontal"
-                app:layout_constraintBottom_toTopOf="@+id/lnTnc"
+                app:layout_constraintBottom_toTopOf="@+id/resendlayout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView7">
@@ -147,13 +147,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/lnTnc"
-                android:layout_width="267dp"
-                android:layout_height="202dp"
+                android:id="@+id/resendlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:orientation="vertical"
                 android:paddingTop="@dimen/_10sdp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linPhoneNum">

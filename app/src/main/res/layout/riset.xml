@@ -152,7 +152,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/lnTnc"
+                android:id="@+id/resendlayout"
                 android:layout_width="267dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"

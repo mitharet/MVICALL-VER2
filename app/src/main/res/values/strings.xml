@@ -22,5 +22,24 @@
     <string name="text_choose_selfie" translatable="false">Ambil Selfie</string>
     <string name="text_choose_gallery" translatable="false">Pilih dari Gallery</string>
 
+    //Menu
+    <string name="text_home" translatable="false">Home</string>
+    <string name="text_market" translatable="false">Marketplace</string>
+    <string name="text_teman" translatable="false">Teman</string>
+    <string name="text_reward" translatable="false">Reward</string>
+
+    //Home
+    <string name="title_live_explore" tools:ignore="MissingTranslation">Live Explore</string>
+    <string name="text_swipe" tools:ignore="MissingTranslation">swipe up to see more</string>
+    <string name="alert_no_data" tools:ignore="MissingTranslation">Yahh, sayang banget tidak ada video yang tersedia…</string>
+    <string name="title_home" tools:ignore="MissingTranslation">MViCall</string>
+    <string name="title_marketplace" tools:ignore="MissingTranslation">Marketplace</string>
+    <string name="title_videotone" tools:ignore="MissingTranslation">Videotone</string>
+    <string name="title_friend" tools:ignore="MissingTranslation">Teman</string>
+    <string name="title_my_account" tools:ignore="MissingTranslation">My Profile</string>
+    <string name="title_message" tools:ignore="MissingTranslation">Messages</string>
+
+    <string name="text_search_videotone" tools:ignore="MissingTranslation">Search Videotone</string>
+
 
 </resources>

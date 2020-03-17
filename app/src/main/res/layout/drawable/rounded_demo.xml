@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/purple_demo">
+    <item>
+        <inset android:insetBottom="2dp">
+            <selector>
+
+                <item android:state_pressed="false">
+                    <shape android:shape="rectangle">
+                        <solid android:color="@color/purple_demo" />
+                        <stroke
+                            android:width="0.5dp"
+                            android:color="@color/purple_demo" />
+                        <corners
+                            android:bottomRightRadius="15dp"
+                            android:bottomLeftRadius="15dp"/>
+                    </shape>
+                </item>
+
+                <item android:state_pressed="true">
+                    <shape android:shape="rectangle">
+                        <corners android:radius="3dp"/>
+                        <solid android:color="@color/grey_ACACACF" />
+                    </shape>
+                </item>
+
+            </selector>
+        </inset>
+    </item>
+</layer-list>

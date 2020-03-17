@@ -181,7 +181,7 @@
             app:layout_constraintGuide_percent="0.86" />
 
         <LinearLayout
-            android:id="@+id/lnTnc"
+            android:id="@+id/resendlayout"
             android:layout_width="249dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"

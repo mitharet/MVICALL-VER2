@@ -153,7 +153,7 @@
                 app:lineWidth="2dp" />
 
             <LinearLayout
-                android:id="@+id/lnTnc"
+                android:id="@+id/resendlayout"
                 android:layout_width="274dp"
                 android:layout_height="37dp"
                 android:layout_gravity="center_horizontal"

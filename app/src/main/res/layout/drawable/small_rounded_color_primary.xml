@@ -1,0 +1,20 @@
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/white">
+
+    <!-- for Button -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="@color/colorPrimary" />
+
+            <padding
+                android:top="5dp"
+                android:bottom="5dp"
+                android:left="5dp"
+                android:right="5dp" />
+
+        </shape>
+    </item>
+
+</layer-list>

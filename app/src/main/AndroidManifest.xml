@@ -10,18 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".ProfileActivity"></activity>
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".OTP" />
-        <activity android:name=".PermissionActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.PermissionActivity" />
         <activity
             android:name=".VerificationActivity"
             android:windowSoftInputMode="stateVisible|adjustResize" />
-        <activity android:name=".IntroActivity" />
+        <activity android:name=".activity.IntroActivity" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".activity.RegisterActivity"
             android:windowSoftInputMode="stateVisible|adjustResize" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".activity.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

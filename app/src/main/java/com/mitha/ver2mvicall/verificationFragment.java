@@ -18,6 +18,7 @@ import androidx.annotation.Nullable;
 
 import com.chaos.view.PinView;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+import com.mitha.ver2mvicall.activity.PermissionActivity;
 
 
 public class verificationFragment extends BottomSheetDialogFragment {
@@ -42,7 +43,7 @@ public class verificationFragment extends BottomSheetDialogFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_verificatioon, container);
+        View rootView = inflater.inflate(R.layout.activity_verification, container);
 
         getDialog().getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
@@ -52,7 +53,7 @@ public class verificationFragment extends BottomSheetDialogFragment {
 
         tv_Warning = rootView.findViewById(R.id.tv_info);
         otp = rootView.findViewById(R.id.pinViewCode);
-        lanjut = rootView.findViewById(R.id.buttonNext);
+        lanjut = rootView.findViewById(R.id.btnVerification);
         lanjut.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -79,7 +80,7 @@ public class verificationFragment extends BottomSheetDialogFragment {
                         otp.setTextColor(Color.WHITE);
                         tv_Warning.setText("Kode Benar!");
                         tv_Warning.setTextColor(getActivity().getResources().getColor(R.color.kodebenar));
-                        startActivity(new Intent(getActivity(), MainActivity.class));
+                        startActivity(new Intent(getActivity(), PermissionActivity.class));
                     }
                 }
             }
